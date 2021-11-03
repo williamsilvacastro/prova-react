@@ -25,14 +25,14 @@ function Index() {
                         <div className="row">
                             <div className="col-xl-6 pr-xl-2">
                                 <div className="row">
-                                    <StatisticCard name="users" num="29.75 M" desc="Total Users"/>
-                                    <StatisticCard name="eye" num="51.25 K" desc="Daily Visitors"/>
+                                    <StatisticCard name="users" num="29.75 M" desc="Total Users" color="primary"/>
+                                    <StatisticCard name="eye" num="51.25 K" desc="Daily Visitors" color="secondary"/>
                                 </div>
                             </div>
                             <div className="col-xl-6 pl-xl-2">
                                 <div className="row">
-                                    <StatisticCard name="cloud-download" num="166.89 M" desc="Downloads"/>
-                                    <StatisticCard name="cart" num="1,250k" desc="Purchased"/>
+                                    <StatisticCard name="cloud-download" num="166.89 M" desc="Downloads" color="success"/>
+                                    <StatisticCard name="cart" num="1,250k" desc="Purchased" color="danger"/>
                                 </div>
                             </div>
                         </div>

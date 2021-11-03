@@ -1,6 +1,7 @@
 import React from "react";
 
 import MainContent from "../../components/macro/main-content/MainContent";
+import WrapperTitle from "../../components/macro/WrapperTitle";
 
 function Pricing() {
     return (
@@ -14,10 +15,7 @@ function Pricing() {
                 </nav>
                 {/* <!-- pricing --> */}
                 <section className="pricing">
-                    <div className="card card_border mb-5">
-                        <div className="cards__heading">
-                            <h3>Pricing Tables -<span> Version 1</span></h3>
-                        </div>
+                    <WrapperTitle title="Pricing Tables - Version 1">
                         <div className="card-body">
                             {/* <!-- pricing version 1 --> */}
 
@@ -98,7 +96,7 @@ function Pricing() {
                                 </div>
                             </section>
                         </div>
-                    </div>
+                    </WrapperTitle>
                 </section>
 
 
@@ -109,10 +107,7 @@ function Pricing() {
 
                 {/* <!-- pricing version 2 --> */}
                 <div className="pricing-version-2">
-                    <div className="card card_border mb-5">
-                        <div className="cards__heading">
-                            <h3>Pricing Tables -<span> Version 2</span></h3>
-                        </div>
+                    <WrapperTitle title="Pricing Tables - Version 2">
                         <div className="card-body">
                             <div className="row px-2">
 
@@ -184,10 +179,9 @@ function Pricing() {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                    </div>
+                    </WrapperTitle>
                 </div>
                 {/* <!-- //pricing version 2 --> */}
             </MainContent>

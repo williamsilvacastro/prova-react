@@ -5,7 +5,8 @@ import cartimg from "../../assets/images/cart.jpg";
 import template2img from "../../assets/images/template2.jpg";
 import dashboardimg from "../../assets/images/dashboard.jpg";
 import deskimg from "../../assets/images/desk.jpg";
-import WrapperTitle from "../../components/macro/WrapperTitle"
+import WrapperTitle from "../../components/macro/WrapperTitle";
+import GridCard from "../../components/micro/GridCard";
 
 function Cards() {
     return (
@@ -105,50 +106,18 @@ function Cards() {
                     <WrapperTitle title="Grid Columns">
                         <div className="card-body">
                             <div className="row row-cols-1 row-cols-md-2">
-                                <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={template2img} className="card-img-top" alt="..." />
-                                        <div className="card-body">
-                                            <h5 className="card-title">Card title</h5>
-                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                <GridCard text="This is a longer card with supporting text below as a natural lead-in to
                                                 additional
-                                                content.This content is a little bit longer.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={deskimg} className="card-img-top" alt="..." />
-                                        <div className="card-body">
-                                            <h5 className="card-title">Card title</h5>
-                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                                content.This content is a little bit longer." img={template2img} />
+                                <GridCard text="This is a longer card with supporting text below as a natural lead-in to
                                                 additional
-                                                content.This content is a little bit longer.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={cartimg} className="card-img-top" alt="..." />
-                                        <div className="card-body">
-                                            <h5 className="card-title">Card title</h5>
-                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                                content.This content is a little bit longer." img={deskimg} />
+                                <GridCard text="This is a longer card with supporting text below as a natural lead-in to
                                                 additional
-                                                content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col mb-4">
-                                    <div className="card">
-                                        <img src={dashboardimg} className="card-img-top" alt="..." />
-                                        <div className="card-body">
-                                            <h5 className="card-title">Card title</h5>
-                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                                content." img={cartimg} />
+                                <GridCard text="This is a longer card with supporting text below as a natural lead-in to
                                                 additional
-                                                content.This content is a little bit longer.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                                content.This content is a little bit longer." img={dashboardimg} />
                             </div>
                         </div>
                     </WrapperTitle>
