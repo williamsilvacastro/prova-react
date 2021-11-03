@@ -1,6 +1,8 @@
 import React from "react";
 
 import MainContent from "../../components/macro/main-content/MainContent";
+import StatisticCard from "../../components/micro/StatisticCard";
+import StatisticCard2 from "../../components/micro/StatisticCard2";
 
 function Index() {
     return (
@@ -23,38 +25,14 @@ function Index() {
                         <div className="row">
                             <div className="col-xl-6 pr-xl-2">
                                 <div className="row">
-                                    <div className="col-sm-6 pr-sm-2 statistics-grid">
-                                        <div className="card card_border border-primary-top p-4">
-                                            <i className="lnr lnr-users"> </i>
-                                            <h3 className="text-primary number">29.75 M</h3>
-                                            <p className="stat-text">Total Users</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-6 pl-sm-2 statistics-grid">
-                                        <div className="card card_border border-primary-top p-4">
-                                            <i className="lnr lnr-eye"> </i>
-                                            <h3 className="text-secondary number">51.25 K</h3>
-                                            <p className="stat-text">Daily Visitors</p>
-                                        </div>
-                                    </div>
+                                    <StatisticCard name="users" num="29.75 M" desc="Total Users"/>
+                                    <StatisticCard name="eye" num="51.25 K" desc="Daily Visitors"/>
                                 </div>
                             </div>
                             <div className="col-xl-6 pl-xl-2">
                                 <div className="row">
-                                    <div className="col-sm-6 pr-sm-2 statistics-grid">
-                                        <div className="card card_border border-primary-top p-4">
-                                            <i className="lnr lnr-cloud-download"> </i>
-                                            <h3 className="text-success number">166.89 M</h3>
-                                            <p className="stat-text">Downloads</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-6 pl-sm-2 statistics-grid">
-                                        <div className="card card_border border-primary-top p-4">
-                                            <i className="lnr lnr-cart"> </i>
-                                            <h3 className="text-danger number">1,250k</h3>
-                                            <p className="stat-text">Purchased</p>
-                                        </div>
-                                    </div>
+                                    <StatisticCard name="cloud-download" num="166.89 M" desc="Downloads"/>
+                                    <StatisticCard name="cart" num="1,250k" desc="Purchased"/>
                                 </div>
                             </div>
                         </div>
@@ -64,40 +42,8 @@ function Index() {
                     {/* <!-- charts --> */}
                     <div className="chart">
                         <div className="row">
-                            <div className="col-lg-6 pr-lg-2 chart-grid">
-                                <div className="card text-center card_border">
-                                    <div className="card-header chart-grid__header">
-                                        Bar Chart
-                                    </div>
-                                    <div className="card-body">
-                                        {/* <!-- bar chart --> */}
-                                        <div id="container">
-                                            <canvas id="barchart"></canvas>
-                                        </div>
-                                        {/* <!-- //bar chart --> */}
-                                    </div>
-                                    <div className="card-footer text-muted chart-grid__footer">
-                                        Updated 2 hours ago
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 pl-lg-2 chart-grid">
-                                <div className="card text-center card_border">
-                                    <div className="card-header chart-grid__header">
-                                        Line Chart
-                                    </div>
-                                    <div className="card-body">
-                                        {/* <!-- line chart --> */}
-                                        <div id="container">
-                                            <canvas id="linechart"></canvas>
-                                        </div>
-                                        {/* <!-- //line chart --> */}
-                                    </div>
-                                    <div className="card-footer text-muted chart-grid__footer">
-                                        Updated just now
-                                    </div>
-                                </div>
-                            </div>
+                            <StatisticCard2 name="Bar Chart" update="Updated 2 hours ago"/>
+                            <StatisticCard2 name="Line Chart" update="Updated just now"/>
                         </div>
                     </div>
                     {/* <!-- //charts --> */}

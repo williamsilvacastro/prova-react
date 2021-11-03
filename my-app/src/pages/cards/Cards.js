@@ -5,6 +5,7 @@ import cartimg from "../../assets/images/cart.jpg";
 import template2img from "../../assets/images/template2.jpg";
 import dashboardimg from "../../assets/images/dashboard.jpg";
 import deskimg from "../../assets/images/desk.jpg";
+import WrapperTitle from "../../components/macro/WrapperTitle"
 
 function Cards() {
     return (
@@ -19,18 +20,15 @@ function Cards() {
                 </nav>
                 <section className="template-cards">
                     {/* <!-- Card Columns --> */}
-                    <div className="card card_border mb-5">
-                        <div className="cards__heading">
-                            <h3>Card Columns</h3>
-                        </div>
+                    <WrapperTitle title="Card Columns">
                         <div className="card-body">
                             <div className="card-columns">
                                 <div className="card">
-                                    <img src={cartimg} className="card-img-top" alt="..."/>
-                                    <div className ="card-body">
-                                    <h5 className ="card-title">Card title that wraps to a new line</h5>
-                                    <p className ="card-text mb-4">This is a longer card with supporting text below as a natural lead-in to
-                                    additional content.This content is a little bit longer.</p>
+                                    <img src={cartimg} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Card title that wraps to a new line</h5>
+                                        <p className="card-text mb-4">This is a longer card with supporting text below as a natural lead-in to
+                                            additional content.This content is a little bit longer.</p>
                                     </div>
                                 </div>
                                 <div className="card p-3">
@@ -46,13 +44,13 @@ function Cards() {
                                     </blockquote>
                                 </div>
                                 <div className="card">
-                                    <img src={template2img} className="card-img-top" alt="..."/>
-                                    <div className ="card-body">
-                                    <h5 className ="card-title">Card title</h5>
-                                    <p className ="card-text  mb-4">This card has supporting text below as a natural lead-in to additional
-                                    content.
-                                    </p>
-                                    <p className ="card-text"><small className ="text-muted">Last updated 3 mins ago</small></p>
+                                    <img src={template2img} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Card title</h5>
+                                        <p className="card-text  mb-4">This card has supporting text below as a natural lead-in to additional
+                                            content.
+                                        </p>
+                                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                 </div>
                                 <div className="card bg-primary text-white text-center p-3">
@@ -75,7 +73,7 @@ function Cards() {
                                     </div>
                                 </div>
                                 <div className="card">
-                                    <img src={dashboardimg} className="card-img-top" alt="..."/>
+                                    <img src={dashboardimg} className="card-img-top" alt="..." />
                                 </div>
                                 <div className="card p-3 text-right">
                                     <blockquote className="blockquote mb-0">
@@ -100,63 +98,60 @@ function Cards() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </WrapperTitle>
                     {/* <!-- /Card Columns --> */}
 
                     {/* <!-- Grid Columns --> */}
-                    <div className="card card_border mb-5">
-                        <div className="cards__heading">
-                            <h3>Grid Columns</h3>
-                        </div>
+                    <WrapperTitle title="Grid Columns">
                         <div className="card-body">
                             <div className="row row-cols-1 row-cols-md-2">
                                 <div className="col mb-4">
                                     <div className="card">
-                                        <img src={template2img} className="card-img-top" alt="..."/>
-                                        <div className ="card-body">
-                                        <h5 className ="card-title">Card title</h5>
-                                        <p className ="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                        additional
-                                        content.This content is a little bit longer.</p>
+                                        <img src={template2img} className="card-img-top" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                                additional
+                                                content.This content is a little bit longer.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col mb-4">
                                     <div className="card">
-                                        <img src={deskimg} className="card-img-top" alt="..."/>
-                                        <div className ="card-body">
-                                        <h5 className ="card-title">Card title</h5>
-                                        <p className ="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                        additional
-                                        content.This content is a little bit longer.</p>
+                                        <img src={deskimg} className="card-img-top" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                                additional
+                                                content.This content is a little bit longer.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col mb-4">
                                     <div className="card">
-                                        <img src={cartimg} className="card-img-top" alt="..."/>
-                                        <div className ="card-body">
-                                        <h5 className ="card-title">Card title</h5>
-                                        <p className ="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                        additional
-                                        content.</p>
+                                        <img src={cartimg} className="card-img-top" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                                additional
+                                                content.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col mb-4">
                                     <div className="card">
-                                        <img src={dashboardimg}className="card-img-top" alt="..."/>
-                                        <div className ="card-body">
-                                        <h5 className ="card-title">Card title</h5>
-                                        <p className ="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                        additional
-                                        content.This content is a little bit longer.</p>
+                                        <img src={dashboardimg} className="card-img-top" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Card title</h5>
+                                            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                                additional
+                                                content.This content is a little bit longer.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </WrapperTitle>
                     {/* <!-- /Grid Columns --> */}
 
                 </section>
