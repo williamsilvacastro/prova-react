@@ -1,6 +1,6 @@
 import React from "react";
-import "../../../assets/css/style.css"
-
+import "../../../assets/css/style.css";
+import profileimg from "../../../assets/images/profileimg.jpg";
 function Header() {
     return (
         <>
@@ -17,27 +17,14 @@ function Header() {
                         </div>
                         <div className="profile_details">
                             <ul>
-                                <li className="dropdown profile_details_drop">
-                                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true"
-                                        aria-expanded="false">
+                                <li >
+                                    <a href="#" >
                                         <div className="profile_img">
-                                            <img src="../../../assets/images/logo.png" className="rounded-circle" alt="" />
-                                            <div className="user-active">
-                                                <span></span>
-                                            </div>
+                                            <img src={profileimg} className="rounded-circle" alt="" />
+                                            
                                         </div>
                                     </a>
-                                    <ul className="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
-                                        <li className="user-info">
-                                            <h5 className="user-name">John Deo</h5>
-                                            <span className="status ml-2">Available</span>
-                                        </li>
-                                        <li> <a href="#"><i className="lnr lnr-user"></i>My Profile</a> </li>
-                                        <li> <a href="#"><i className="lnr lnr-users"></i>1k Followers</a> </li>
-                                        <li> <a href="#"><i className="lnr lnr-cog"></i>Setting</a> </li>
-                                        <li> <a href="#"><i className="lnr lnr-heart"></i>100 Likes</a> </li>
-                                        <li className="logout"> <a href="#sign-up.html"><i className="fa fa-power-off"></i> Logout</a> </li>
-                                    </ul>
+                                    
                                 </li>
                             </ul>
                         </div>

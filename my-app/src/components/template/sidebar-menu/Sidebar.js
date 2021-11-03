@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../assets/css/style.css";
+import img from "../../../assets/images/logo.png";
 
 
 function Sidebar() {
@@ -26,7 +27,7 @@ function Sidebar() {
                 </div>
 
                 <div className="logo-icon text-center">
-                    <a href="index.html" title="logo"><img src="../../../assets/images/logo.png" alt="logo-icon" /> </a>
+                    <a href="index.html" title="logo"><img src={img} alt="logo-icon" /> </a>
                 </div>
                 {/* <!-- //logo end --> */}
 
