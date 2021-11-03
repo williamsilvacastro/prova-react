@@ -3796,9 +3796,10 @@ a.yui {
   font-size: 1.2em; }
 
 .user-panel-top {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end; }
+  display: grid !important;
+  grid-auto-flow: column !important;
+  justify-content: end !important;
+ }
 
 .nofitications-dropdown {
   margin-top: 0px; }

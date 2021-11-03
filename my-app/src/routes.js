@@ -8,6 +8,7 @@ export const Routes = () => {
     return (
         <Switch>
             <Route path="/" component={index} exact/>
+            <Route path="/index.html" component={index} exact/>
         </Switch>
     )
 }

@@ -3,7 +3,17 @@ import "../../../assets/css/style.css";
 
 
 function Sidebar() {
-
+    const toggleMenu = () => {
+        let body = document.querySelector("body");
+        let hasCollapsed = body.classList.contains("sidebar-menu-collapsed");
+        if (hasCollapsed) {
+            body.classList.remove("sidebar-menu-collapsed");
+            body.classList.add("noscroll");
+        } else {
+            body.classList.remove("noscroll");
+            body.classList.add("sidebar-menu-collapsed");
+        };
+    }
 
 
     return (
@@ -33,7 +43,7 @@ function Sidebar() {
                     </ul>
                     {/* <!-- //sidebar nav end -->
                     <!-- toggle button start --> */}
-                    <a className="toggle-btn" onClick="toggleMenu()">
+                    <a className="toggle-btn" onClick={toggleMenu}>
                         <i className="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
                         <i className="fa fa-angle-double-right menu-collapsed__right"></i>
                     </a>
